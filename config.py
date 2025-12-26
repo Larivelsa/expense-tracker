@@ -3,4 +3,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_FILE = os.path.join(BASE_DIR, 'data.json')
-current_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
+def get_current_date():
+    """Get current date and time as formatted string."""
+    return datetime.now().strftime('%Y-%m-%d %H:%M:%S')
